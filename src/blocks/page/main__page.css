@@ -1,0 +1,17 @@
+@import url(../header/header.css);
+@import url(../button/button.css);
+@import url(../button-menu-burger/button-burger.css);
+@import url(../../pages/vendor/normalaze.css);
+@import url(../../pages/vendor/fonts.css);
+@import url(../root/root.css);
+@import url(../main/main.css);
+@import url(../logo/logo.css);
+@import url(../search/search.css);
+@import url(../search-not-found/search-not-found.css);
+@import url(../preloader/preloader.css);
+@import url(../news-card/news-card.css);
+@import url(../about/about.css);
+@import url(../result/result.css);
+@import url(../footer/footer.css);
+@import url(../popup/popup.css);
+@import url(../saved-info/saved-info.css);

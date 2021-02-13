@@ -1,0 +1,15 @@
+.result__content {
+  display: flex;
+  padding: 80px 0;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1250px;
+  padding: 0 36px;
+}
+
+@media screen and (max-width:425px) {
+  .result__content {
+    padding: 0 16px 32px;
+  }
+}

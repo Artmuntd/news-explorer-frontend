@@ -1,0 +1,26 @@
+.result__show-more {
+  background: #ffffff;
+  align-self: center;
+  max-width: 288px;
+  width: 100%;
+  color: #000;
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 0;
+  margin-bottom: 80px;
+}
+
+.result__show-more:hover {
+  background: #ffffff;
+  opacity: .5;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .result__show-more {
+    margin-bottom: 40px;
+  }
+}

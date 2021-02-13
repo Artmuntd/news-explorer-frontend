@@ -1,0 +1,14 @@
+.header__menu-burger-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #1A1B22;
+  display: none;
+  align-items: start;
+  flex-direction: column;
+  z-index: 1;
+  height: 286px;
+  border-radius: 0 0 10px 10px;
+  padding-top: 72px;
+}

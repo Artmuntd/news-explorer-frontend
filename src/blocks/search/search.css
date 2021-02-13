@@ -1,0 +1,19 @@
+@import url(./__field/../__placeholder/search__placeholder.css);
+@import url(./__btn/search__btn.css);
+
+.search {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 608px;
+}
+
+@media screen and (max-width:426px) {
+  .search {
+    display: flex;
+    margin-top: 122px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 608px;
+  }
+}

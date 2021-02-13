@@ -1,0 +1,11 @@
+.main__subtitle {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  max-width: 545px;
+  align-self: start;
+  margin-bottom: 64px;
+}

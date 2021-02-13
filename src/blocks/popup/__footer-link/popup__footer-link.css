@@ -1,0 +1,13 @@
+.popup__footer-link {
+  color: blueviolet;
+  font-family: inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.popup__footer-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

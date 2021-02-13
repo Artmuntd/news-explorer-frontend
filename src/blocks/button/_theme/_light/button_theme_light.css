@@ -1,0 +1,8 @@
+.button_theme_light {
+  color: #000000 !important;
+  border: solid black 1px !important;
+}
+
+.button_theme_light:hover {
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.62) !important;
+}

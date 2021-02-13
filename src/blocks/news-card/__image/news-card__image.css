@@ -1,0 +1,5 @@
+.news-card__image {
+  position: relative;
+  height: 272px;
+  background: url(../../../pages/images/image_card1.jpg);
+}

@@ -1,0 +1,12 @@
+.about__content {
+  padding-top: 70px;
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__content {
+    max-width: 424px;
+    padding-left: 32px;
+    padding-top: 10px;
+  }
+}
