@@ -84,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/pages/save-auth.html',
-      filename: 'saved-auth.html'
+      filename: 'save-auth.html'
     }),
     new HtmlWebpackPlugin({
       inject: false,

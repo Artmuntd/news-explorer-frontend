@@ -1,5 +1,5 @@
-import '../blocks/page/main__page.css'
-import '../blocks/page/save-auth.css'
+import '../blocks/page/index.css'
+
 const tooltip = document.querySelector('.news-card__tooltip');
 const popup = document.querySelector('.popup');
 const popupReg = document.querySelector('.popup-registr');
