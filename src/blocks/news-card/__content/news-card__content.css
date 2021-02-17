@@ -1,0 +1,9 @@
+.news-card__content {
+  padding: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .news-card__content {
+    padding: 16px;
+  }
+}

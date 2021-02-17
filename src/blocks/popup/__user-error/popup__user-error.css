@@ -1,0 +1,7 @@
+.popup__user-error {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: center;
+  bottom: 12px;
+}

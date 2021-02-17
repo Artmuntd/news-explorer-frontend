@@ -1,0 +1,18 @@
+.popup__btn-login {
+  background: #2F71E5;
+  width: 360px;
+  height: 64px;
+  margin: 40px 0 16px;
+  margin: 0 0 16px;
+}
+
+
+.popup__btn-login:disabled {
+  border: 1px solid rgba(0, 0, 0, .2);
+  background: #E6E8EB;
+  color: #B6BCBF;
+  border: 0;
+  cursor: unset;
+  box-shadow: 0;
+  color: rgba(0, 0, 0, .2);
+}

@@ -1,0 +1,35 @@
+.search__btn {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  border-radius: 100px;
+  background-color: #2F71E5;
+  color: #fff;
+  height: 64px;
+  max-width: 168px;
+  width: 100%;
+  border: 0px;
+}
+
+.search__btn:hover {
+  background-color: #347EFF;
+}
+
+.search__btn:active {
+  background-color: #2A65CC;
+}
+
+@media screen and (max-width:426px) {
+  .search__btn {
+    margin-top: 16px;
+    position: relative;
+    margin-left: 0;
+    border-radius: 100px;
+    border: 1px solid gray;
+    max-width: 1200px;
+    width: 95%;
+    padding-left: 24px;
+    height: 64px;
+    box-sizing: border-box;
+  }
+}

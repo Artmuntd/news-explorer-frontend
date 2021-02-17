@@ -1,0 +1,9 @@
+@import url(./__circle/preloader__circle.css);
+@import url(./__text/preloader__text.css);
+
+.preloader-content {
+  display: none;
+  max-height: 282px;
+  height: 100%;
+  margin: 80px 0;
+}
