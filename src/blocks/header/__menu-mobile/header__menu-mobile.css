@@ -1,0 +1,31 @@
+@import url(./_white/header__menu-mobile_white.css);
+@import url(./_close/header__menu-mobile_close.css);
+@import url(./_on/header__menu-mobile_on.css);
+@import url(./_off/header__menu-mobile_off.css);
+
+.header__menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 741px) {
+  .header__menu-mobile {
+    display: block;
+    border: none;
+    outline: none;
+    justify-self: end;
+    margin-right: 2.5rem;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 24px;
+    width: 24px;
+    z-index: 2;
+    background: url(../../../images/mobile-menu.svg);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .header__menu-mobile {
+    margin-right: 1rem;
+  }
+}

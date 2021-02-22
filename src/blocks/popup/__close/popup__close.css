@@ -1,19 +1,16 @@
 .popup__close {
-  width: 26px;
+  width: 2.5rem;
   position: absolute;
-  top: -26px;
-  right: -26px;
+  top: -2.375rem;
+  right: -2.375rem;
   cursor: pointer;
 }
 
-
-@media screen and (max-width: 426px) {
-
+@media screen and (max-width: 741px) {
   .popup__close {
-    max-width: 320px;
-    right: 16px;
-    top: -40px;
+    width: 1.5rem;
+    top: -2.5rem;
+    right: 1rem;
+    z-index: 3;
   }
-
-
 }

@@ -1,0 +1,23 @@
+@import url(./_active/search-result__add-button_active.css);
+
+.search-result__add-button {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.45rem;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  background-image: url("../../../images/cardmarks/cardmark-normal.svg");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+}
+
+.search-result__add-button:hover {
+  background-image: url("../../../images/cardmarks/cardmark-hover.svg");
+}
+/* .search-result__add-button:active {
+  background-image: url("../../../images/cardmarks/cardmark-marked.svg");
+} */

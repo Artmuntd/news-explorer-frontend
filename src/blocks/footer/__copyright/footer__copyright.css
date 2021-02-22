@@ -1,14 +1,15 @@
 .footer__copyright {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  color: #B6BCBF;
+  display: grid;
+  justify-content: start;
+  align-content: center;
 }
 
-@media screen and (max-width: 650px) {
-  .footer__nav {
-    margin-bottom: 38px;
+@media screen and (max-width: 670px) {
+  .footer__copyright {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding: 30px 0 26px 0;
+    width: max-content;
   }
 }

@@ -2,127 +2,107 @@
 <html lang="ru">
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>News explorer</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='<%=htmlWebpackPlugin.files.css %>'>
-  <script type="module" src='<%= htmlWebpackPlugin.files.js %>' defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>NewsExplorer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>" />
 </head>
 <body>
-  <header class="header">
-    <div class="header__continer">
-      <h2 class="logo logo_theme_light">NewsExplorer</h2>
-      <div class="header__nav">
-        <a class="header-nav__link header__nav-link_theme_light" href="./index.html">Главная</a>
-        <a class="header-nav__link header__nav-link_theme_light" href="save-auth.html">Сохраненные статьи</a>
-        <button class="button button_theme_light"><span>Грета</span>  <img class="button__logout_theme_dark" src="<%=require('./images/logout.svg')%>" alt="exit" > </button>
+  <div class="root">
+    <header class="header header_white">
+      <nav class="header__menu header__menu_black">
+        <a href="./index.html" class="header__logo button_black">NewsExplorer</a>
+        <button class="header__menu-mobile header__menu-mobile_white" id="header__menu-mobile-articles-page"></button>
+        <button class="header__menu-mobile header__menu-mobile_close"></button>
+        <ul class="header__buttons">
+          <li class="header__button">
+            <a href="./index.html" class="button button__main button_black">Главная
+            </a>
+          </li>
+          <li class="header__button header__button_underline-black" id="underline">
+            <a href="./save-auth.html" class="button button__main button_black">Сохраненные статьи
+            </a>
+          </li>
+          <button class="header__button header__button_name button__selected  button__selected_black button">
+            <p class="button_black  button__selected_with-name"></p>
+            <div class="button__logout button__logout_black"></div>
+          </button>
+        </ul>
+      </nav>
+      <div class="header__info header__info_saved">
+        <h3 class="subtitle subtitle__header subtitle__header_grey">
+          Сохранённые статьи
+        </h3>
+        <h2 class="title title__saved-news">
+          <span id="header__info-name"></span>
+          , у вас <span id="header__info_amoumt-articles"></span> сохранённых
+          статей
+        </h2>
+        <p class="header__tags subtitle subtitle__footer-link">
+          По ключевым словам:
+          <span class="subtitle__span" id="header__tag-main"></span>
+          <span class="subtitle__span" id="header__tag-comma"></span>
+          <span class="subtitle__span" id="header__tag-second"></span>
+          <span class="subtitle__span" id="header__tag-and"></span>
+          <span class="subtitle__span" id="header__tag-other"></span>
+          <span class="subtitle__span" id="header__tag-word"></span>
+        </p>
       </div>
-      <div class="header__menu-burger header__menu-burger_theme_light">
-        <div class="header__menu-burger-content">
-          <img src="<%=require('./images/close.svg')%>" alt="close" class="header__menu-burger-close">
-          <a class="header-nav__link " href="index.html">Главная</a>
-          <a class="header-nav__link " href="saved-auth.html">Сохраненные статьи</a>
-          <button class="button button-menu-burger">Авторизоваться</button>
-        </div>
-      </div>
-    </div>
-  </header>
-  <section class="saved-info">
-    <p class="saved-info__subtitle">Сохраненные статьи</p>
-    <h2 class="saved-info__title">Грета, у вас 5 сохранённых статей</h2>
-    <p class="saved-info__keywords-title">По ключевым словам:  <span class="saved-info__keywords">Природа,Тайга</span>  и <span class="saved-info__keywords">2-м другим</span> </p>
-  </section>
-  <section class="result">
-    <div class="result__content">
-      <div class="result__container">
-    <div class="news-card">
-      <div class="news-card__image">
-        <div class="news-card__delete-icon news-card__save-icon"></div>
-        <div class="news-card__keyword">Природа</div>
-      </div>
-      <div class="news-card__content">
-        <div class="news-card__data">2 августа, 2019</div>
-        <h2 class="news-card__title">Национальное достояние – парки</h2>
-        <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-          природе.</p>
-        <a class="news-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
-      </div>
-    </div>
-    <div class="news-card">
-      <div class="news-card__image">
-        <div class="news-card__delete-icon news-card__save-icon"></div>
-        <div class="news-card__keyword">Природа</div>
-      </div>
-      <div class="news-card__content">
-        <div class="news-card__data">2 августа, 2019</div>
-        <h2 class="news-card__title">Национальное достояние – парки</h2>
-        <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-          природе.  </p>
-        <a class="news-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
-      </div>
-    </div>
-    <div class="news-card">
-      <div class="news-card__image">
-        <div class="news-card__delete-icon news-card__save-icon"></div>
-        <div class="news-card__keyword">Природа</div>
-      </div>
-      <div class="news-card__content">
-        <div class="news-card__data">2 августа, 2019</div>
-        <h2 class="news-card__title">Национальное достояние – парки</h2>
-        <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-          природе.  </p>
-        <a class="news-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
+    </header>
+    <div class="search-result" id="search-result-block">
+      <div class="search-result__cards">
+        <template id="card-template">
+          <div class="search-result__card">
+            <div class="search-result__image-box">
+              <p class="search-result__tag search-result__tag_on"></p>
+              <div class="search-result__login-ask">
+                Убрать из сохраненных
+              </div>
+              <img class="search-result__image" src="" alt="фотография новости" />
+              <div class="search-result__deleteIcon search-result__icon"></div>
+            </div>
+            <div class="search-result__info-box">
+              <div class="search-result__date"></div>
+              <h5 class="title title__search-result-article"></h5>
+              <p class="subtitle subtitle__article"></p>
+              <p class="search-result__source"></p>
+            </div>
+          </div>
+        </template>
       </div>
     </div>
-    <div class="news-card">
-      <div class="news-card__image">
-        <div class="news-card__delete-icon news-card__save-icon"></div>
-        <div class="news-card__keyword">Природа</div>
-      </div>
-      <div class="news-card__content">
-        <div class="news-card__data">2 августа, 2019</div>
-        <h2 class="news-card__title">Национальное достояние – парки</h2>
-        <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-          природе.  </p>
-        <a class="news-card__source" href="https://lenta.ru/" target="_blank">Лента.ру</a>
-      </div>
+
+    <div class="footer">
+      <nav class="footer__links">
+        <p class="footer__copyright subtitle subtitle__footer-copy">
+          &copy; 2020 Supersite, Powered by News API
+        </p>
+        <ul class="footer__link-container">
+          <li class="footer__list">
+            <a class="footer__link subtitle subtitle__footer-link" href="./index.html">Главная</a>
+          </li>
+          <li class="footer__list">
+            <a class="footer__link subtitle subtitle__footer-link" href="https://praktikum.yandex.ru/"
+              target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+        <ul class="footer__img-link-container">
+          <li class="footer__list">
+            <a class="footer__link" href="https://github.com/Elensmith/" target="_blank">
+              <img class="" src="<%=require('../images/github.svg').default%>" alt="логотип гитхаб" />
+            </a>
+          </li>
+          <li class="footer__list">
+            <a class="footer__link" href="https://www.facebook.com/" target="_blank">
+              <img class="" src="<%=require('../images/facebook.svg').default%>" alt="логотип фэйсбук" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="news-card">
-      <div class="news-card__image">
-        <div class="news-card__delete-icon news-card__save-icon"></div>
-        <div class="news-card__keyword">Природа</div>
-      </div>
-      <div class="news-card__content">
-        <div class="news-card__data">2 августа, 2019</div>
-        <h2 class="news-card__title">Национальное достояние – парки</h2>
-        <p class="news-card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-          природе.  </p>
-        <a class="news-card__source" href="#">Лента.ру</a>
-      </div>
-    </div>
-    </div>
-</div>
-  </section>
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__copyright"> &#169; 2020 Supersite, Powered by News API</div>
-      <div class="footer__nav">
-        <div class="footer__links">
-          <a href="./index.html" class="footer__link">Главная</a>
-          <a href="https://praktikum.yandex.ru/profile/web-developer/" target="_blank" class="footer__link">Яндекс.Практикум</a>
-        </div>
-        <div class="footer__social-icon">
-          <a class="footer__social-link" href="https://github.com/Artmuntd" target="_blank"><img src="<%=require('./images/github.svg')%>" alt="github"></a>
-          <a class="footer__social-link" href="https://www.facebook.com/" target="_blank"><img src="<%=require('./images/facebook.svg')%>" alt="facebook"></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  </div>
+  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
+
 </html>

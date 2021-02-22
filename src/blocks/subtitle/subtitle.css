@@ -1,0 +1,13 @@
+@import url(./__header/subtitle__header.css);
+@import url(./__preloader/subtitle__preloader.css);
+@import url(./__footer-copy/subtitle__footer-copy.css);
+@import url(./footer-link/subtitle__footer-link.css);
+@import url(./__article/subtitle__article.css);
+@import url(./__about-author/subtitle__about-author.css);
+@import url(./__span/subtitle__span.css);
+
+.subtitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}

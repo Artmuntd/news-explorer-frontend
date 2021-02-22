@@ -1,0 +1,10 @@
+.header__tags {
+  padding-top: 1.875rem;
+}
+
+@media screen and (max-width: 741px) {
+  .header__tags {
+    padding-top: 1rem;
+    font-size: 1.125em;
+  }
+}

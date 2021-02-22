@@ -1,0 +1,7 @@
+.popup__other-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  margin: auto;
+  max-height: 1.125rem;
+}

@@ -1,14 +1,21 @@
-@import url(./__link/header-nav__link.css);
-@import url(./__menu-burger/header__menu-burger.css);
-@import url(./__menu-burger-close/header__menu-burger-close.css);
-@import url(./__menu-burger-content/header__menu-burger-content.css);
-@import url(./__nav/header__nav.css);
-@import url(./__continer/header__continer.css);
+@import url(./__buttons/header__buttons.css);
+@import url(./__info/header__info.css);
+@import url(./__menu/header__menu.css);
+@import url(./__logo/header__logo.css);
+@import url(../../blocks/subtitle/subtitle.css);
+@import url(../title/title.css);
+@import url(./_white/header_white.css);
+@import url(./__button/header__button.css);
+@import url(./__tags/header__tags.css);
+@import url(../subtitle/subtitle.css);
+@import url(./__menu-mobile/header__menu-mobile.css);
+@import url(./_dark/header_dark.css);
+
 .header {
-  max-width: 100%;
-  min-height: 80px;
-  border-bottom: rgba(196, 196, 196, 0.2) solid 1px;
-  display: flex;
-  justify-content: center;
-  z-index: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/search-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
 }

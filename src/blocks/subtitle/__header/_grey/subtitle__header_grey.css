@@ -1,0 +1,11 @@
+.subtitle__header.subtitle__header_grey {
+  color: #b6bcbf;
+  padding: 0 0 1.75rem 0;
+}
+
+@media screen and (max-width: 741px) {
+  .subtitle__header.subtitle__header_grey {
+    font-size: 0.75em;
+    padding: 0 0 1rem 0;
+  }
+}

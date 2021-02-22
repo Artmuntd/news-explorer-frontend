@@ -1,0 +1,6 @@
+.search-result__tag.search-result__tag_on {
+  display: block;
+}
+.search-result__tag_on:first-letter {
+      text-transform: uppercase;
+  }

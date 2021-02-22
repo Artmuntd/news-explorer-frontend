@@ -1,0 +1,11 @@
+@import url(./_black/button__logout_black.css);
+
+.button__logout {
+  display: inline-block;
+    width: 1.563rem;
+  height: 1.563rem;
+  align-self: center;
+  padding-left: 0.625rem;
+  background: url(../../../images/logout-white.svg) 100% 100% no-repeat;;
+
+}

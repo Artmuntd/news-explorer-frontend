@@ -1,0 +1,24 @@
+.subtitle__article {
+  padding-top: 1rem;
+  font-size: 1em;
+  line-height: 1.375em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 933px) {
+  .subtitle__article {
+    -webkit-line-clamp: 7;
+  }
+}
+
+@media screen and (max-width: 836px) {
+  .subtitle__article {
+    padding-top: 0.625rem;
+    -webkit-line-clamp: 4;
+  }
+}

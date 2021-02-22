@@ -1,0 +1,15 @@
+.footer__img-link-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: end;
+  list-style-type: none;
+  grid-gap: 27px;
+  padding: 0;
+}
+
+@media screen and (max-width: 670px) {
+  .footer__img-link-container {
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+}

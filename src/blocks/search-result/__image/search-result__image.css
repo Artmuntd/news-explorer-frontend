@@ -1,0 +1,19 @@
+.search-result__image {
+  width: 100%;
+  /* object-fit: cover; */
+  height: 17rem;
+  position: relative;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+@media screen and (max-width: 1244px) {
+  .search-result__image {
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .search-result__image {
+    height: 9.375rem;
+  }
+}

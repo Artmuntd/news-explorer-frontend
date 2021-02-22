@@ -1,0 +1,22 @@
+.search-result__cards {
+  padding: 4rem 0 3.938rem 0;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 752px) {
+  .search-result__cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .search-result__cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 0.625rem;
+  }
+}

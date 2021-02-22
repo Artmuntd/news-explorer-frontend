@@ -1,0 +1,11 @@
+@import url(./__header/title__header.css);
+@import url(./__about-author/title__about-author.css);
+@import url(./__search-result-main/title__search-result-main.css);
+@import url(./__search-result-article/title__search-result-article.css);
+@import url(./__saved-news/title__saved-news.css);
+
+.title {
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}

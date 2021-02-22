@@ -1,0 +1,17 @@
+@import url(./_on/button__search-result_on.css);
+
+.button__search-result {
+  align-self: center;
+  color: #1a1b22;
+  border-radius: 5rem;
+  background: white;
+  border: none;
+  width: 18rem;
+  height: 4rem;
+  margin: 0 0 5rem 0;
+  display: none;
+}
+
+.button__search-result:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,34 @@
+.search-field__input {
+  border-radius: 6.25em;
+  width: 100%;
+  height: 4rem;
+  color: white;
+  background: white;
+  border: none;
+  color: #1a1b22;
+  text-indent: 1.5rem;
+  caret-color: #2f71e5;
+  outline: none;
+  border: none;
+}
+
+.search-field__input::placeholder {
+  color: #b6bcbf;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.search-field__input:disabled {
+  color: #b6bcbf;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-field__input {
+    height: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .search-field__input {
+    margin: auto;
+  }
+}

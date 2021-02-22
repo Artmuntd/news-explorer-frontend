@@ -1,0 +1,20 @@
+
+.search-result__image-box {
+  width: 100%;
+  background-color: lightgrey;
+  height: 17rem;
+  position: relative;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+@media screen and (max-width: 1244px) {
+  .search-result__image-box {
+    height: 13rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .search-result__image-box {
+    height: 9.375rem;
+  }
+}

@@ -1,0 +1,10 @@
+.header__button.header__button_underline {
+  border-bottom: solid white;
+}
+
+@media screen and (max-width: 741px) {
+  .header__button.header__button_underline {
+    grid-row-start: 1;
+    border-bottom: none;
+  }
+}

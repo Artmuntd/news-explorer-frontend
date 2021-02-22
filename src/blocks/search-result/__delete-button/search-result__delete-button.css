@@ -1,0 +1,18 @@
+.search-result__delete-button {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.45rem;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  background-image: url("../../../images/trash/trash-normal.svg");
+}
+
+.search-result__delete-button:hover {
+  background-image: url("../../../images/trash/trash-hover.svg");
+}

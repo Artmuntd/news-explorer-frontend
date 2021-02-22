@@ -1,0 +1,17 @@
+.about-author__info-box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8.188rem;
+}
+
+@media screen and (max-width: 1120px) {
+  .about-author__info-box {
+    padding-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .about-author__info-box {
+    padding-top: 2.5rem;
+  }
+}
