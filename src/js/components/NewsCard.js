@@ -69,12 +69,12 @@ export default class NewsCard extends BaseComponent {
   }
 
   setDataCard() {
-    const image = this.template.querySelector(".search-result__image");
-    const date = this.template.querySelector(".search-result__date");
+    const image = this.template.querySelector(".search-result__urlToImage");
+    const date = this.template.querySelector(".search-result__published-date");
     const title = this.template.querySelector(".title__search-result-article");
-    const text = this.template.querySelector(".subtitle__article");
-    const source = this.template.querySelector(".search-result__source");
-    const link = this.template.querySelector(".search-result__info-box");
+    const text = this.template.querySelector(".subtitle__description");
+    const source = this.template.querySelector(".search-result__source-name");
+    const link = this.template.querySelector(".search-result__info-continer");
     const tag = this.template.querySelector(".search-result__tag_on");
 
     if (this.data._id) {
@@ -85,7 +85,7 @@ export default class NewsCard extends BaseComponent {
       title.textContent = this.data.title;
       text.textContent = this.data.text;
       source.textContent = this.data.source;
-      this.template.querySelector(".search-result__info-box").setAttribute("onclick", `'${this.data.link}'`);
+      this.template.querySelector(".search-result__info-continer").setAttribute("onclick", `'${this.data.link}'`);
     } else {
       const newdate = this.data.publishedAt.value;
 
@@ -104,12 +104,12 @@ export default class NewsCard extends BaseComponent {
 
     return {
       keyword: this.newsCardList.renderTopic().toString().toLowerCase(),
-      image: card.querySelector(".search-result__image").src,
-      date: card.querySelector(".search-result__date").textContent,
+      image: card.querySelector(".search-result__urlToImage").src,
+      date: card.querySelector(".search-result__published-date").textContent,
       title: card.querySelector(".title__search-result-article").textContent,
-      text: card.querySelector(".subtitle__article").textContent,
-      source: card.querySelector(".search-result__source").textContent,
-      link: card.querySelector(".search-result__info-box").getAttribute("onclick").slice(13, -2),
+      text: card.querySelector(".subtitle__description").textContent,
+      source: card.querySelector(".search-result__source-name").textContent,
+      link: card.querySelector(".search-result__info-continer").getAttribute("onclick").slice(13, -2),
     };
   }
 

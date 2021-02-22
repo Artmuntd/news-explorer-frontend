@@ -1,5 +1,5 @@
 @import url(./_black/button__selected_black.css);
-@import url(./_with-name/button__selected_with-name.css);
+@import url(./_name/button__selected_name.css);
 
 .button__selected {
   padding: 0.938rem 1.063rem 0.938rem;

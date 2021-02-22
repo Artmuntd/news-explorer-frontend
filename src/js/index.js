@@ -24,7 +24,7 @@ import {
 
   const buttonsClose = document.querySelectorAll(".popup__close");
   const buttonLogout = document.querySelector(".button__logout");
-  const auth = document.getElementById("open-popupEnter");
+  const auth = document.getElementById("open-popupauth");
   const registration = document.getElementById("open-popupRegistration");
   const enterForm = document.getElementById("form-enter");
   const searchForm = document.getElementById("form-search");

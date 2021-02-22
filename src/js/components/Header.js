@@ -4,13 +4,13 @@ export default class Header extends BaseComponent {
   constructor(page) {
     super();
     this.page = page;
-    this.buttonAuth = this.page.getElementById("open-popupEnter");
+    this.buttonAuth = this.page.getElementById("open-popupauth");
     this.buttonSaved = this.page.querySelector(".header__button_saved");
     this.buttonWithName = this.page.querySelector(
       ".header__button_name",
     );
     this.userName = this.page.querySelector(
-      ".button__selected_with-name",
+      ".button__selected_name",
     );
     this.userNameBorder = this.page.querySelector(".header__button_name");
     this.logoutButton = this.page.querySelector(".button__logout");
@@ -64,7 +64,6 @@ export default class Header extends BaseComponent {
     this.buttonMobileMenuArticles.classList.add("header__menu-mobile_off");
     this.addCloseButtonHeader.classList.add("header__menu-mobile_on");
     this.underlineBlack.classList.remove("header__button_underline-black");
-    // this.headerInfo.classList.add("header__info_filter");
     this.searchResult.classList.add("search-result_filter");
   }
 

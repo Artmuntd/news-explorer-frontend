@@ -1,4 +1,4 @@
-.about-author__paragraph-box {
+.about-author__paragraph{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,25 +8,25 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .about-author__paragraph-box {
+  .about-author__paragraph{
     padding: 1rem 12rem 0 0;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .about-author__paragraph-box {
+  .about-author__paragraph{
     padding: 1rem 5rem 0 0;
   }
 }
 
 @media screen and (max-width: 770px) {
-  .about-author__paragraph-box {
+  .about-author__paragraph{
     padding: 1rem 2.5rem 0 0;
   }
 }
 
 @media screen and (max-width: 670px) {
-  .about-author__paragraph-box {
+  .about-author__paragraph{
     padding: 1rem 1rem 5rem 1rem;
     max-height: none;
   }

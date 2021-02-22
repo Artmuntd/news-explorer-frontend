@@ -1,5 +1,9 @@
-# news-explorer-frontend вторая часть диплома для яндекс практикум
-## Используются следующие пакеты в проекте: 
+# news-explorer-frontend третья часть часть диплома для яндекс практикум
+## ip для обращения к API: 130.193.48.114
+### сайт доступен по доменам: 
+http://www.artmuntd.students.nomoreparties.xyz/ 
+http://artmuntd.students.nomoreparties.xyz/
+#### Используются следующие пакеты в проекте: 
 • babel-loader,
 • babel-cli,
 • babel-core,
@@ -22,7 +26,7 @@
 • path.
 — для работы с изображениями:
 • file-loader, • image-webpack-loader.
-### работать с  репозиторием :
+##### работать с  репозиторием :
 git clone.
 https://github.com/Artmuntd/news-explorer-frontend
 установить зависимости из списка выше: npm install

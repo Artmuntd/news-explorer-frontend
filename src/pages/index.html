@@ -22,14 +22,14 @@
           <li class="header__button  header__button_underline">
             <a href="./index.html" class="button button__main">Главная</a>
           </li>
-          <li class="header__button header__button_auth" id="open-popupEnter">
+          <li class="header__button header__button_auth" id="open-popupauth">
             <a href="#" class="button button__selected">Авторизоваться</a>
           </li>
           <li class="header__button header__button_saved header__button_off">
             <a href="./save-auth.html" class="button button__main button__main_grey">Сохраненные статьи</a>
           </li>
           <button class="header__button header__button_name header__button_off button__selected button">
-            <p class="button  button__selected_with-name"></p>
+            <p class="button  button__selected_name"></p>
             <div class="button__logout"></div>
           </button>
         </ul>
@@ -40,11 +40,11 @@
           Находите самые свежие статьи на любую тему и сохраняйте в своём
           личном кабинете.
         </h3>
-        <form class="search-field" id="form-search">
-          <input class="search-field__input" name="search" placeholder="Введите тему новости" type="text" minlength="2"
+        <form class="search" id="form-search">
+          <input class="search__input" name="search" placeholder="Введите ключевое слово" type="text" minlength="5"
             required />
           <p class="popup__form_error popup__form_error-search"></p>
-          <button class="button button__search-field" type="submit" id="search-button" disabled>
+          <button class="button button__search" type="submit" id="search-button" disabled>
             Искать
           </button>
         </form>
@@ -74,15 +74,15 @@
               <div class="search-result__login-ask">
                 Войдите, чтобы сохранять статьи
               </div>
-              <img class="search-result__image" src="" alt="фотография новости" />
+              <img class="search-result__urlToImage" src="" alt="фотография новости" />
               <div class="search-result__addIcon search-result__icon">
               </div>
             </div>
-            <div class="search-result__info-box">
-              <div class=" search-result__date"></div>
+            <div class="search-result__info-continer">
+              <div class=" search-result__published-date"></div>
               <h5 class="title title__search-result-article"></h5>
-              <p class="subtitle subtitle__article"></p>
-              <p class="search-result__source"></p>
+              <p class="subtitle subtitle__description"></p>
+              <p class="search-result__source-name"></p>
             </div>
           </div>
         </template>
@@ -92,12 +92,12 @@
       </button>
     </div>
 
-    <div class="about-author">
-      <img src="<%=require('../images/avatar.png').default%>" class="about-author__avatar"
+    <div class="about">
+      <img src="<%=require('../images/avatar.png').default%>" class="about-author__photo"
         alt="фотография пользователя" />
-      <div class="about-author__info-box">
+      <div class="about__info-continer">
         <h4 class="title title__about-author">Об авторе</h4>
-        <div class="about-author__paragraph-box">
+        <div class="about-author__paragraph">
           <p class="subtitle subtitle__about-author">
             Это блок с описанием автора проекта. Здесь следует указать, как
             вас зовут, чем вы занимаетесь, какими технологиями разработки
@@ -197,7 +197,7 @@
         </ul>
         <ul class="footer__img-link-container">
           <li class="footer__list">
-            <a class="footer__link" href="https://github.com/Elensmith/" target="_blank">
+            <a class="footer__link" href="https://github.com/Artmuntd" target="_blank">
               <img class="footer__link" src="<%=require('../images/github.svg').default%>" alt="гитхаб аватар" />
             </a>
           </li>

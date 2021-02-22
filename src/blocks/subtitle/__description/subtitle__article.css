@@ -1,4 +1,4 @@
-.subtitle__article {
+.subtitle__description {
   padding-top: 1rem;
   font-size: 1em;
   line-height: 1.375em;
@@ -11,13 +11,13 @@
 }
 
 @media screen and (max-width: 933px) {
-  .subtitle__article {
+  .subtitle__description {
     -webkit-line-clamp: 7;
   }
 }
 
 @media screen and (max-width: 836px) {
-  .subtitle__article {
+  .subtitle__description {
     padding-top: 0.625rem;
     -webkit-line-clamp: 4;
   }
