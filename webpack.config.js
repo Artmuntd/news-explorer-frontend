@@ -6,10 +6,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
   .BundleAnalyzerPlugin;
-// подключаем
+// подключаем плагин
 const isDev = process.env.NODE_ENV === "development";
 module.exports = {
-  entry: { main: "./src/js/index.js", articles: "./src/js/auth/index.js" },
+  entry: { main: "./src/js/index.js", articles: "./src/js/articles/index.js" },
   output: {
     path: path.resolve(__dirname, "dist"),
     // filename: (chunkData) => {
@@ -113,9 +113,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: "./src/pages/save-auth.html",
-      filename: "save-auth.html",
-      chunks: ["save-auth"],
+      template: "./src/pages/articles.html",
+      filename: "articles.html",
+      chunks: ["articles"],
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({

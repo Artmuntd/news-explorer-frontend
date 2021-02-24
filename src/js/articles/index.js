@@ -1,4 +1,4 @@
-import "../../css/save-auth.css";
+import "../../css/articles.css";
 import MainApi from "../api/MainApi";
 import Header from "../components/Header";
 import constants from "../constants/constants";
@@ -31,7 +31,7 @@ import helpers from "../utils/helpers";
     isLoggedIn,
   );
   const newsCard = new NewsCard("", "", PAGE, mainApi, "", "");
-  // инфа о статьях и имя
+
   const amountSavedArticles = document.getElementById("header__info_amoumt-articles");
   const savedName = document.getElementById("header__info-name");
   const firstTagWord = document.getElementById("header__tag-main");
@@ -41,7 +41,6 @@ import helpers from "../utils/helpers";
   const andTagWord = document.getElementById("header__tag-and");
   const otherTagWord = document.getElementById("header__tag-word");
 
-  // проверка токена, если нет - переместим на главную
   if (TOKEN) {
     mainApi
       .getUserData(TOKEN)
@@ -58,27 +57,27 @@ import helpers from "../utils/helpers";
     document.location.replace("./index.html");
   }
 
-  // открыть мобильное меню
+
   buttonMobileMenuArticles.addEventListener("click", () => {
     header.mobileMenuArticlesOpen();
   });
 
-  // закрыть мобильное меню
+
   buttonCloseMobileMenu.addEventListener("click", () => {
     header.mobileMenuArticlesClose();
   });
 
-  // выход из профиля
+
   buttonLogout.addEventListener("click", () => {
     header.logOut();
   });
 
-  // отрисовка информации о сохраненных статьях
+
   function showAmount(length) {
     amountSavedArticles.textContent = length;
   }
 
-  // запрос сохраненных карточек
+
   mainApi.getArticles().then((res) => {
     res.data.forEach((element) => {
       savedNewsArray.push(element);
@@ -100,9 +99,9 @@ import helpers from "../utils/helpers";
       throw new Error(err);
     });
 
-  // отсрочка чтобы успели прийти в дом теги
+
   setTimeout(() => {
-    // подсчет количества повторов тэгов
+
     const array = arrayKeywords.reduce((obj, item) => {
       if (!obj[item]) {
         obj[item] = 0;
@@ -111,12 +110,12 @@ import helpers from "../utils/helpers";
       return obj;
     }, {});
 
-    // перевод объекта в массив и сортировка по убыванию повторов
+
     const sortable = Object.entries(array)
       .sort(([, a], [, b]) => b - a)
       .reduce((previous, [key, value]) => ({ ...previous, [key]: value }), {});
 
-    // отображение количества ключевых слов
+
     const tagWord = Object.keys(sortable);
     if (tagWord.length > 3) {
       firstTagWord.textContent = bigLetter(tagWord[0]);

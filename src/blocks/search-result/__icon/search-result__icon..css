@@ -1,0 +1,7 @@
+.search-result__icon{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 2px;
+  z-index: 1;
+}

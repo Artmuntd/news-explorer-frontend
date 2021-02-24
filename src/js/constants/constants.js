@@ -8,4 +8,3 @@ const constants = {
 };
 
 export default constants;
-//https://nomoreparties.co/news/v2/top-headlines?country=us&apiKey=[ваш_ключ]  при деплое надо будет поставить

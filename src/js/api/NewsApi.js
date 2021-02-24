@@ -8,7 +8,6 @@ export default class NewsApi {
     this.dateMax = dateMax;
   }
 
-  // date 2020-09-01
   getNews(topic) {
     return fetch(
       `${this.newsUrl}?q=${topic}&from=${this.dateMin}&to=${this.dateMax}&sortBy=date&language=ru&pageSize=100&apiKey=${this.apiKey}`,

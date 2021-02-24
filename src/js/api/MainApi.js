@@ -1,5 +1,6 @@
 import ErrorHandler from "../utils/ErrorHandler";
 
+
 export default class MainApi {
   constructor(mainURL) {
     this.mainURL = mainURL;
@@ -31,8 +32,7 @@ export default class MainApi {
     return fetch(`${this.mainURL}/signin`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
         email,

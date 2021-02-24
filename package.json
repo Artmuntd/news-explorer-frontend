@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+    "build": "NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "NODE_ENV=production gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -43,9 +43,10 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.5",
-    "babel-polyfill": "^6.26.0",
-    "core-js": "^3.4.1"
+    "babel-polyfill": "6.26.0",
+    "core-js": "3.4.1",
+    "cors": "^2.8.5",
+    "momentjs": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/Artmuntd/news-explorer-frontend/issues"

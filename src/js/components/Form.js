@@ -11,7 +11,6 @@ const {
   SEARCH_ERROR,
 } = errorMessages;
 
-// Класс, отвечающий за логику работы формы
 export default class Form extends BaseComponent {
   constructor(form, api, popup, card, popupUserAdded) {
     super();
@@ -43,7 +42,7 @@ export default class Form extends BaseComponent {
     return values;
   }
 
-  // находит инпуты в форме и отправляет их на валидацию
+
   getInfo() {
     Array.from(this.form.elements).forEach((input) => {
       if (input.nodeName === "INPUT") {
@@ -90,7 +89,7 @@ export default class Form extends BaseComponent {
     }
   }
 
-  //  добавляет форме ошибку, пришедшую с сервера
+
   _setServerError(err) {
     const error = this.buttonSubmit.previousElementSibling;
     if (err === 400) {
@@ -102,7 +101,7 @@ export default class Form extends BaseComponent {
     }
   }
 
-  //  валидирует переданный инпут
+
   _validateInput(input) {
     this.input = input;
     let valid = true;
@@ -126,7 +125,6 @@ export default class Form extends BaseComponent {
     return valid;
   }
 
-  // валидирует всю форму
   _validateForm() {
     if (this.form.checkValidity()) {
       this.buttonSubmit.disabled = false;
@@ -135,7 +133,7 @@ export default class Form extends BaseComponent {
     }
   }
 
-  // вспомогательный метод, очищает поля формы
+
   _cleanErrors() {
     this.form.querySelectorAll("input").forEach((errorField) => {
       const error = errorField.nextElementSibling;

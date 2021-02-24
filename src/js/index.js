@@ -1,4 +1,4 @@
-import "../css/index.css";
+import "../css/style.css";
 import MainApi from "./api/MainApi";
 import NewsApi from "./api/NewsApi";
 import Popup from "./components/Popup";
@@ -61,7 +61,7 @@ import {
   const getTopicSearch = new Form(searchForm, "", "");
   const header = new Header(PAGE);
 
-  // проверка авторизации при загрузке страницы
+
   if (TOKEN) {
     mainApi
       .getUserData(TOKEN)
@@ -74,10 +74,10 @@ import {
         header.render(isLoggedIn, "");
       });
   }
-  //  валидация строки поиска
+
   getTopicSearch.getInfo();
 
-  // выполнить вход после успешной регистрации
+
   popupUserAddedEnter.addEventListener("click", () => {
     popupUserAdded.close();
     popupEnter.open(popupEnter);
@@ -85,16 +85,16 @@ import {
     buttonCloseMobileMenu.classList.remove("header__menu-mobile_on");
   });
 
-  // открыть мобильное меню
+
   buttonMobileMenuMain.addEventListener("click", () => {
     header.mobileMenuMainOpen();
   });
-  // закрыть мобильное меню
+
   buttonCloseMobileMenu.addEventListener("click", () => {
     header.mobileMenuMainClose();
   });
 
-  // закрыть попап по крестику
+
   buttonsClose.forEach((element) => {
     element.addEventListener("click", () => {
       popupEnter.close();
@@ -106,7 +106,7 @@ import {
     });
   });
 
-  // закрыть попап ecs
+
   document.addEventListener("keyup", (event) => {
     event.preventDefault();
     if (event.code === "Escape") {
@@ -118,13 +118,13 @@ import {
     }
   });
 
-  // открыть попап авторизации
+
   auth.addEventListener("click", () => {
     popupEnter.open(popupEnter);
     validateEnterForm.getInfo();
     buttonCloseMobileMenu.classList.remove("header__menu-mobile_on");
   });
-  // открыть попап ренистрации (в попапе авторизации)
+
   registration.addEventListener("click", () => {
     popupEnter.close(popupEnter);
     popupRegistration.open(popupRegistration);
@@ -136,7 +136,7 @@ import {
     });
   });
 
-  // поиск новостей (клик по кнопке "поиск")
+
   searchButton.addEventListener("click", () => {
     const newsCardList = new NewsCardList(
       TEMPLATE,
@@ -150,7 +150,7 @@ import {
     newsCardList.searchingNews();
   });
 
-  // выход из профиля
+
   buttonLogout.addEventListener("click", () => {
     header.logOut();
   });

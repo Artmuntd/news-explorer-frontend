@@ -14,7 +14,7 @@
 @import url(../button/button.css);
 @import url(./__tag/search-result__tag.css);
 @import url(./_filter/search-result_filter.css);
-
+@import url(./__icon/search-result__icon..css);
 .search-result {
   flex-direction: column;
   padding: 0 6.5rem 0 6.5rem;

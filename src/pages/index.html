@@ -26,7 +26,7 @@
             <a href="#" class="button button__selected">Авторизоваться</a>
           </li>
           <li class="header__button header__button_saved header__button_off">
-            <a href="./save-auth.html" class="button button__main button__main_grey">Сохраненные статьи</a>
+            <a href="./articles.html" class="button button__main button__main_grey">Сохраненные статьи</a>
           </li>
           <button class="header__button header__button_name header__button_off button__selected button">
             <p class="button  button__selected_name"></p>
@@ -93,7 +93,7 @@
     </div>
 
     <div class="about">
-      <img src="<%=require('../images/avatar.png').default%>" class="about-author__photo"
+      <img src="../src/images/avatar.png" class="about-author__photo"
         alt="фотография пользователя" />
       <div class="about__info-continer">
         <h4 class="title title__about-author">Об авторе</h4>
@@ -213,5 +213,4 @@
   </div>
   <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
-
 </html>

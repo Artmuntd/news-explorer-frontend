@@ -1,7 +1,7 @@
 import BaseComponent from "./BaseComponent";
-import { changeDate } from "../utils/dateConverter";
+import { changeDate, changeDateFormat } from "../utils/dateConverter";
 
-//  Класс карточки новости
+
 export default class NewsCard extends BaseComponent {
   constructor(data, template, page, mainApi, newsCardList, savedNewsArray) {
     super();
@@ -22,8 +22,6 @@ export default class NewsCard extends BaseComponent {
     this._handlerLoginAskOff = this._handlerLoginAskOff.bind(this);
   }
 
-  // отвечает за отрисовку иконки карточки. У этой иконки три состояния: иконка незалогиненного
-  // пользователя, активная иконка залогиненного, неактивная иконка залогиненного.
   renderIcon(isLoggedIn) {
     const cardMarks = this.page.querySelectorAll(".search-result__addIcon");
     const deleteMarks = this.page.querySelectorAll(".search-result__deleteIcon");
@@ -49,12 +47,12 @@ export default class NewsCard extends BaseComponent {
     }
   }
 
-  // слушатель на клик по иконке добавить себе (синяя заливка)
+
   _iconActive(mark) {
     this._addListener(mark, "click", () => this._handlerIconActive(mark));
   }
 
-  // подсказка рядом с кнопкой удалить/добавить себе
+
   _searchResultLoginAsk(mark) {
     this._addListener(mark, "mouseover", (event) => this._handlerLoginAskOn(event));
     this._addListener(mark, "mouseout", (event) => this._handlerLoginAskOff(event));
@@ -98,14 +96,14 @@ export default class NewsCard extends BaseComponent {
     }
   }
 
-  // получить данные для отпрвки на сервер
+
   getDataToSaveArticle(event) {
     const card = event.closest(".search-result__card");
 
     return {
       keyword: this.newsCardList.renderTopic().toString().toLowerCase(),
       image: card.querySelector(".search-result__urlToImage").src,
-      date: card.querySelector(".search-result__published-date").textContent,
+      date: new Date(),
       title: card.querySelector(".title__search-result-article").textContent,
       text: card.querySelector(".subtitle__description").textContent,
       source: card.querySelector(".search-result__source-name").textContent,
@@ -113,7 +111,7 @@ export default class NewsCard extends BaseComponent {
     };
   }
 
-  //  запрос к api на сохранение карточки
+
   saveArticle(icon) {
     const card = icon.closest(".search-result__card");
     const cardData = this.getDataToSaveArticle(card);
@@ -127,7 +125,7 @@ export default class NewsCard extends BaseComponent {
       });
   }
 
-  // запрос к api на удаление карточки
+
   deleteArticle(articleId, mark, card) {
     this.mainApi.removeArticle(articleId).then(() => {
       mark.classList.remove("search-result__add-button_active");

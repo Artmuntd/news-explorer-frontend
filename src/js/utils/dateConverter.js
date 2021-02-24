@@ -7,9 +7,7 @@ const dateFromConverter = () => {
 // формат даты для запроса к news api
 const changeDateFormat = (date) => {
   const year = new Intl.DateTimeFormat("ru", { year: "numeric" }).format(date);
-  const month = new Intl.DateTimeFormat("ru", { month: "numeric" }).format(
-    date,
-  );
+  const month = new Intl.DateTimeFormat("ru", { month: "numeric" }).format(date);
   const day = new Intl.DateTimeFormat("ru", { day: "numeric" }).format(date);
   return `${year}-${month}-${day}`;
 };
@@ -25,7 +23,7 @@ const changeDate = (date) => {
   const day = new Intl.DateTimeFormat("ru", { day: "numeric" }).format(date);
   const month = new Intl.DateTimeFormat("ru", { month: "long" }).format(date);
   const year = new Intl.DateTimeFormat("ru", { year: "numeric" }).format(date);
-  return `${day} ${month}, ${year}`;
+  return `${day} ${month} ${year}`;
 };
 
 export {

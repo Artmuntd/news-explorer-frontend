@@ -26,7 +26,7 @@ export default class NewsCardList extends BaseComponent {
     this.buttonShowMore = this.page.getElementById("search-result-show-more");
   }
 
-  // поиск по api, складывает все в массив this.newsArray
+
   searchingNews() {
     this.topic = this.renderTopic();
 
@@ -88,14 +88,14 @@ export default class NewsCardList extends BaseComponent {
       .classList.toggle("search-result_on");
   }
 
-  // отвечает за отрисовку лоудера
+
   _renderLoader() {
     this.page
       .getElementById("preloader-searching")
       .classList.toggle("preloader_on");
   }
 
-  // принимает объект ошибки и показывает ошибку в интерфейсе
+
   _renderNotFound() {
     this.page
       .getElementById("preloader-not-found")
@@ -108,7 +108,7 @@ export default class NewsCardList extends BaseComponent {
       .classList.add("button__search-result_on");
   }
 
-  // получение слова из строки поиска новостей
+
   renderTopic() {
     this.topicValue = this.getTopicSearch.getValues();
     this.topic = Object.values(this.topicValue);
@@ -122,19 +122,19 @@ export default class NewsCardList extends BaseComponent {
     return this.topic;
   }
 
-  // функциональность кнопки «Показать ещё»
+
   _showMore() {
     if (this.newsArray.length <= 3) {
       this.buttonShowMore.classList.remove("button__search-result_on");
     }
     this._addListener(this.buttonShowMore, "click", (event) => {
       event.stopPropagation();
-      // event.stopImmediatePropagation();
+
       this._renderResults();
     });
   }
 
-  // принимает экземпляр карточки и добавляет её в список
+
   addCard(element) {
     this.newCard = this.newsCard(element, this.card);
 
@@ -146,7 +146,7 @@ export default class NewsCardList extends BaseComponent {
     this.page.getElementById("search-result__error-text").textContent = "Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз";
   }
 
-  // очищает блок результатов прошлого поиска
+
   _clearSearchResultBlock() {
     this._openSearchResultBlock();
     this.cardArr.forEach((card) => {
