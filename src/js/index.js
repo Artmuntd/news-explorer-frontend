@@ -65,9 +65,9 @@ import {
   if (TOKEN) {
     mainApi
       .getUserData(TOKEN)
-      .then((data) => {
+      .then((res) => {
         isLoggedIn = true;
-        header.render(isLoggedIn, data.name);
+        header.render(isLoggedIn, res.data.name);
       })
       .catch(() => {
         isLoggedIn = false;
