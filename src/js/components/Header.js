@@ -10,7 +10,7 @@ export default class Header extends BaseComponent {
       ".header__button_name",
     );
     this.userName = this.page.querySelector(
-      ".button__selected_name",
+      ".button__selected_with-name ",
     );
     this.userNameBorder = this.page.querySelector(".header__button_name");
     this.logoutButton = this.page.querySelector(".button__logout");

@@ -41,13 +41,15 @@ import helpers from "../utils/helpers";
   const andTagWord = document.getElementById("header__tag-and");
   const otherTagWord = document.getElementById("header__tag-word");
 
+  console.log(savedName);
+
   if (TOKEN) {
     mainApi
       .getUserData(TOKEN)
-      .then((data) => {
+      .then((res) => {
         isLoggedIn = true;
-        header.render(isLoggedIn, data.name);
-        savedName.textContent = data.name;
+        header.render(isLoggedIn, res.data.name);
+        savedName.textContent = res.data.name;
       })
       .catch(() => {
         isLoggedIn = false;
