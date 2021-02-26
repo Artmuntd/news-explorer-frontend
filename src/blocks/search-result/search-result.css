@@ -1,0 +1,35 @@
+@import url(./_on/search-result_on.css);
+@import url(./__image-box/search-result__image-box.css);
+@import url(./__card/search-result__card.css);
+@import url(./__urlToImage/search-result__urlToImage.css);
+@import url(./__add-button/search-result__add-button.css);
+@import url(./__delete-button/search-result__delete-button.css);
+@import url(./__cards/search-result__cards.css);
+@import url(./__login-ask/search-result__login-ask.css);
+@import url(./__info-continer/search-result__info-continer.css);
+@import url(./__published-date/search-result__published-date.css);
+@import url(../title/title.css);
+@import url(../subtitle/subtitle.css);
+@import url(./__source-name/search-result__source.css);
+@import url(../button/button.css);
+@import url(./__tag/search-result__tag.css);
+@import url(./_filter/search-result_filter.css);
+@import url(./__icon/search-result__icon..css);
+.search-result {
+  flex-direction: column;
+  padding: 0 6.5rem 0 6.5rem;
+  background-color: #f5f6f7;
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .search-result {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .search-result {
+    padding: 0 1rem 0 1rem;
+  }
+}

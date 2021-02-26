@@ -1,24 +1,18 @@
-@import url(./__logout/button__logout_theme_dark.css);
-@import url(./_theme/_light/button_theme_light.css);
+@import url(./__selected/button__selected.css);
+@import url(./__main/button__main.css);
+@import url(./__search/button__search.css);
+@import url(./__logout/button__logout.css);
+@import url(./__search-result/button__search-result.css);
+@import url(./__popup/button__popup.css);
+@import url(./_black/button_black.css);
+@import url(./_white/button_white.css);
+
 
 .button {
-  border-radius: 100px;
-  background-color: rgba(0, 0, 0, 0);
-  color: #fff;
-  margin-left: 30px;
-  border: #fff solid 1px;
-  padding: 12px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.125em;
+  text-decoration: none;
+  outline: none;
   cursor: pointer;
-  font-family: roboto;
-  font-style: normal;
-  display: flex;
-  font-weight: 500;
-  font-size: 18px;
-  align-items: center;
-  justify-content: center;
-  line-height: 24px;
-}
-
-.button:hover {
-  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.62) !important;
+  line-height: 0.98em;
 }

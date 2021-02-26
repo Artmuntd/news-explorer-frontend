@@ -1,0 +1,26 @@
+@import url(./_off/search-result__card_off.css);
+
+.search-result__card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 1.25rem 1.25rem;
+  background-color: white;
+  max-width: 25rem;
+  height: 36rem;
+  border-radius: 1.25rem;
+  position: relative;
+}
+
+@media screen and (max-width: 836px) {
+  .search-result__card {
+    max-height: 26.875rem;
+    max-width: 14rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .search-result__card {
+    max-width: 18rem;
+    max-height: 27.5rem;
+  }
+}

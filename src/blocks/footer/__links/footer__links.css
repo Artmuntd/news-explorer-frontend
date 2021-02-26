@@ -1,18 +1,22 @@
 .footer__links {
-  display: flex;
-  margin-right: 40px;
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  grid-template-columns: auto auto min-content;
+  max-height: 5rem;
+  padding: 0 6.5rem 0 6.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .footer__links {
-    margin-right: 0;
+    padding: 0 2.5rem 0 2.5rem;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
   .footer__links {
-    flex-direction: column;
-    height: 74px;
-    justify-content: space-between;
+    grid-auto-flow: row;
+    max-height: 11rem;
+    padding: 0 1rem 0 1rem;
   }
 }

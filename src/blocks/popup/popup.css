@@ -2,14 +2,13 @@
 @import url(./__close/popup__close.css);
 @import url(./__title/popup__title.css);
 @import url(./__form/popup__form.css);
-@import url(./__input-wrapper/popup__input-wrapper.css);
-@import url(./__input-name/popup__input-name.css);
 @import url(./__input/popup__input.css);
-@import url(./__error/popup__error.css);
-@import url(./__user-error/popup__user-error.css);
-@import url(./__btn-login/popup__btn-login.css);
-@import url(./__footer/popup__footer.css);
-@import url(./__footer-link/popup__footer-link.css);
+@import url(./_is-opened/popup_is-opened.css);
+@import url(./__field-name/popup__field-name.css);
+@import url(../button/button.css);
+@import url(./__other-registration/popup__other-registration.css);
+@import url(./__other-box/popup__other-box.css);
+@import url(./__other-text/popup__other-text.css);
 
 .popup {
   position: fixed;
@@ -17,18 +16,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
-  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  display: none;
 }
 
-
-@media screen and (max-width: 426px) {
-
+@media screen and (max-width: 741px) {
   .popup {
-    align-items: flex-end;
+    z-index: 2;
+    top: 3.5rem;
+    height: auto;
+    background-color: initial;
   }
-
-
 }

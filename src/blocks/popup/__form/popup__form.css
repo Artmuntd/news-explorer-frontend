@@ -1,3 +1,7 @@
+@import url(./_error/popup__form_error.css);
+@import url(./_error-user/popup__form_error-user.css);
+@import url(./_error-enter-password/popup__form_error-enter-password.css);
+@import url(./_error-search/popup__form_error-search.css);
+
 .popup__form {
-  position: relative;
 }

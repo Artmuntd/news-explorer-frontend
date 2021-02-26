@@ -1,0 +1,16 @@
+@import url(./_black/button__selected_black.css);
+@import url(./_name/button__selected_name.css);
+
+.button__selected {
+  padding: 0.938rem 1.063rem 0.938rem;
+  border-radius: 6.25em;
+  border: 0.063em solid #ffffff;
+  color: white;
+
+}
+
+@media screen and (max-width: 741px) {
+  .button__selected {
+    padding: 0.938rem 4.625rem 0.938rem;
+  }
+}

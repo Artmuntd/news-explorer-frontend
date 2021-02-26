@@ -1,0 +1,5 @@
+/* @media screen and (max-width: 900px) { */
+  .header__button.header__button_off {
+    display: none;
+  }
+/* } */

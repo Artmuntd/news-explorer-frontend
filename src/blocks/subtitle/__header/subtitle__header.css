@@ -1,0 +1,15 @@
+@import url(./_grey/subtitle__header_grey.css);
+
+.subtitle__header {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  padding: 0 0 4.313rem 0;
+  max-width: 32.6em;
+  color: white;
+}
+
+@media screen and (max-width: 741px) {
+  .subtitle__header {
+    padding: 0 0 7.625em 0;
+  }
+}

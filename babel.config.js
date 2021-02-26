@@ -1,16 +1,19 @@
+
 const presets = [
   [
     '@babel/env',
     {
-      targets: {
+      targets: { // указать цели, для полифилов
+        esmodules: true,
+        ios: '12',
         edge: '17',
-        ie: '11',
-        firefox: '50',
+        firefox: '60',
         chrome: '64',
+        android: '67',
         safari: '11.1',
       },
-      useBuiltIns: 'usage',
-      corejs: '3.4.1',
+      useBuiltIns: 'usage', // эта настройка babel-polyfill, если стоит значение usage, то будут подставлятся полифилы для версий браузеров которые указали ниже.
+      corejs: '3.1.4', // явно проставить версию corejs
     },
   ],
 ];

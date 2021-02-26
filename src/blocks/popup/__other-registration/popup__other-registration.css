@@ -1,0 +1,10 @@
+@import url(./_added/popup__other-registration_added.css);
+
+.popup__other-registration {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #2f71e5;
+  margin: 0;
+  cursor: pointer;
+  padding-left: 0.313rem;
+}

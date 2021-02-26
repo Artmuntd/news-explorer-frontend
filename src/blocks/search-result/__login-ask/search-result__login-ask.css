@@ -1,0 +1,23 @@
+@import url("./_on/search-result__login-ask_on.css");
+
+.search-result__login-ask {
+  position: absolute;
+  align-self: baseline;
+  line-height: 2.5rem;
+  max-width: 11.375rem;
+  right: 4.313rem;
+  top: 1.5rem;
+  padding: 0 0.75rem 0 0.75rem;
+  background: #ffffff;
+  border: none;
+  font-size: 0.625em;
+  border-radius: 0.625rem;
+  z-index: 1;
+  display: none;
+}
+
+/* @media screen and (max-width: 1029px) {
+  .search-result__login-ask {
+    display: none;
+  }
+} */

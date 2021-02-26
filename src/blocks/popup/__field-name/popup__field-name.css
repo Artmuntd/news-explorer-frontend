@@ -1,0 +1,13 @@
+.popup__field-name {
+  margin: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75em;
+  line-height: 0.938em;
+  color: #2f71e5;
+}
+
+.popup__field-name:first-child {
+  padding-top: 1.875rem;
+}
